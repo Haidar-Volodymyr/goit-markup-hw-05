@@ -122,6 +122,16 @@ body {
 .list-address:not(:last-child) {
   margin-right: 40px;
 }
+.hover-studio::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  background: var(--pressed-state-color);
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 /* ==========/HEADER========= */
 
 /* ===========HERO=========== */
@@ -414,6 +424,21 @@ body {
 /*==============/FOOTER============*/
 
 /* +++++++++++++++++++++++++++PORTFOLIO++++++++++++++++++++++++ */
+
+/* ================= HEADER ===============*/
+
+.hover-portfolio::after {
+  display: block;
+  content: "";
+  width: 66px;
+  height: 4px;
+  left: 0px;
+  top: 44px;
+  background: var(--pressed-state-color);
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 .button-filter {
   font-family: inherit;
   font-weight: 500;
