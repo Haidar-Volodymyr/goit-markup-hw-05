@@ -61,7 +61,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="model-button" type="button">Order Service</button>
+          <button type="button" class="model-button"data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Section Feature-->
@@ -425,5 +425,15 @@ https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn"data-modal-close>
+          <svg class="modal-close-btn-icon">
+            <use href="./images/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
