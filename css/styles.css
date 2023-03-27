@@ -129,17 +129,16 @@ body {
 .list-address:not(:last-child) {
   margin-right: 40px;
 }
-.hover-studio::after {
+.current::after {
   display: block;
   position: absolute;
   content: "";
-  width: 48px;
+  width: 100%;
   height: 4px;
   background: var(--pressed-state-color);
   border-radius: 2px;
   margin: 0 auto;
-  bottom: 0;
-  top: 44px;
+  bottom: -28px;
 }
 /* ==========/HEADER========= */
 
@@ -441,19 +440,6 @@ body {
 
 /* ================= HEADER ===============*/
 
-.hover-portfolio::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 66px;
-  height: 4px;
-  top: 44px;
-  background: var(--pressed-state-color);
-  border-radius: 2px;
-  margin: 0 auto;
-  bottom: 0;
-  top: 44px;
-}
 .button-filter {
   font-family: inherit;
   font-weight: 500;
