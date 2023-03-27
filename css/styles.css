@@ -129,7 +129,7 @@ body {
 .list-address:not(:last-child) {
   margin-right: 40px;
 }
-.current::after {
+.current::before {
   display: block;
   position: absolute;
   content: "";
