@@ -72,7 +72,9 @@ body {
 .menu {
   display: flex;
   margin-left: 76px;
+  position: relative;
 }
+
 .menu-items:not(:last-child) {
   margin-right: 40px;
 }
@@ -114,6 +116,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition: color 250ms var(--time-animation);
+  position: relative;
 }
 
 .main-contact {
@@ -128,13 +131,15 @@ body {
 }
 .hover-studio::after {
   display: block;
+  position: absolute;
   content: "";
   width: 48px;
   height: 4px;
   background: var(--pressed-state-color);
   border-radius: 2px;
   margin: 0 auto;
-  margin-top: 20px;
+  bottom: 0;
+  top: 44px;
 }
 /* ==========/HEADER========= */
 
@@ -439,14 +444,15 @@ body {
 .hover-portfolio::after {
   display: block;
   content: "";
+  position: absolute;
   width: 66px;
   height: 4px;
-  left: 0px;
   top: 44px;
   background: var(--pressed-state-color);
   border-radius: 2px;
   margin: 0 auto;
-  margin-top: 20px;
+  bottom: 0;
+  top: 44px;
 }
 .button-filter {
   font-family: inherit;
